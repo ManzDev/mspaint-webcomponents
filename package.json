@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "wds --root-dir src --watch",
-    "build": "rollup -c"
+    "deploy": "rollup -c && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
