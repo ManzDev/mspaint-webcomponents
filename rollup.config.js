@@ -1,4 +1,5 @@
 import copy from "rollup-plugin-copy";
+import replace from "@rollup/plugin-replace";
 
 export default {
   input: "src/index.js",
@@ -12,6 +13,11 @@ export default {
         { src: "src/index.html", dest: "dist" },
         { src: "src/assets/**/*", dest: "dist/assets" }
       ]
+    }),
+    replace({
+      preventAssignment: true,
+      "delimiters": ["", ""],
+      "url(../assets/": "url(/mspaint-webcomponents/assets/"
     })
   ]
 }

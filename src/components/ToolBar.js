@@ -28,7 +28,7 @@ class ToolBar extends HTMLElement {
   getToolButtons() {
     const pad = number => number.toString().padStart(2, "0");
     return BUTTONS.map((name, index) =>
-      `<win-button icon="${name}" style="--image: url(/assets/icon-${pad(index)}.png)"></win-button>`
+      `<win-button icon="${name}" style="--image: url(../assets/icon-${pad(index)}.png)"></win-button>`
     ).join("");
   }
 
