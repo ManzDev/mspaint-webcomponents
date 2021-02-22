@@ -16,7 +16,7 @@ class WinButton extends HTMLElement {
       }
 
       .minimize, .maximize, .close {
-        background-image: url(../assets/win95.png);
+        background-image: url(/assets/win95.png);
         margin: 0 1px;
         width: 15px;
         border-width: 1px;

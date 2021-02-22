@@ -23,12 +23,12 @@ class StatusBar extends HTMLElement {
       }
       .coords-bar {
         width: 130px;
-        background: url(../assets/coords.png) no-repeat;
+        background: url(/assets/coords.png) no-repeat;
         text-indent: 16px;
       }
       .resize-bar {
         width: 130px;
-        background: url(../assets/resize.png) no-repeat;
+        background: url(/assets/resize.png) no-repeat;
         text-indent: 16px;
       }
       .status-bar .icon-resize {

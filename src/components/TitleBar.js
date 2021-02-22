@@ -36,7 +36,7 @@ class TitleBar extends HTMLElement {
       .icon {
         width: 16px;
         height: 16px;
-        background: url(../assets/mspaint.png);
+        background: url(/assets/mspaint.png);
       }
     `;
   }

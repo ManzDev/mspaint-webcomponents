@@ -18,7 +18,7 @@ class FillBar extends HTMLElement {
         width: 42px;
         height: 26px;
         padding: 2px 0;
-        background: url(../assets/fillgeom.png) no-repeat 0 center;
+        background: url(/assets/fillgeom.png) no-repeat 0 center;
       }
 
       .full {
