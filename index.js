@@ -16,7 +16,7 @@ class WinButton extends HTMLElement {
       }
 
       .minimize, .maximize, .close {
-        background-image: url(../assets/win95.png);
+        background-image: url(/mspaint-webcomponents/assets/win95.png);
         margin: 0 1px;
         width: 15px;
         border-width: 1px;
@@ -116,7 +116,7 @@ class TitleBar extends HTMLElement {
       .icon {
         width: 16px;
         height: 16px;
-        background: url(../assets/mspaint.png);
+        background: url(/mspaint-webcomponents/assets/mspaint.png);
       }
     `;
   }
@@ -219,7 +219,7 @@ class ToolBar extends HTMLElement {
   getToolButtons() {
     const pad = number => number.toString().padStart(2, "0");
     return BUTTONS.map((name, index) =>
-      `<win-button icon="${name}" style="--image: url(../assets/icon-${pad(index)}.png)"></win-button>`
+      `<win-button icon="${name}" style="--image: url(/mspaint-webcomponents/assets/icon-${pad(index)}.png)"></win-button>`
     ).join("");
   }
 
@@ -253,7 +253,7 @@ class FillBar extends HTMLElement {
         width: 42px;
         height: 26px;
         padding: 2px 0;
-        background: url(../assets/fillgeom.png) no-repeat 0 center;
+        background: url(/mspaint-webcomponents/assets/fillgeom.png) no-repeat 0 center;
       }
 
       .full {
@@ -521,12 +521,12 @@ class StatusBar extends HTMLElement {
       }
       .coords-bar {
         width: 130px;
-        background: url(../assets/coords.png) no-repeat;
+        background: url(/mspaint-webcomponents/assets/coords.png) no-repeat;
         text-indent: 16px;
       }
       .resize-bar {
         width: 130px;
-        background: url(../assets/resize.png) no-repeat;
+        background: url(/mspaint-webcomponents/assets/resize.png) no-repeat;
         text-indent: 16px;
       }
       .status-bar .icon-resize {
